@@ -42,7 +42,7 @@ const inputMask = ({
     input.placeholder = placeholder
     input.style.caretColor = 'transparent';
 
-    input.addEventListener('blur', e => {
+    input.addEventListener('blur', () => {
         if (!value.length) {
             input.value = ''
         }
